@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: auto;
+    width: 1400px;
+    padding: 20px;
+    /* margin-top: 30px;
+    padding-left: 60px; */
+    display: flex;
+}
+
+.sideBar {
+    height: 130vh;
+    width: 20%;
+    background-color: aliceblue;
+    padding-left: 30px;
+}
+
+.sideBar .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.navBar {
+    list-style-type: none;
+}
+
+.navBar li i {
+    font-size: 25px;
+}
+
+.navBar a {
+    text-decoration: none;
+    line-height: 2;
+    font-size: 25px;
+    padding: 0 6px;
+}
+
+/* .navInfo{
+
+} */
+
+.navInfo>h2 {
+    margin-top: 20px;
+}
+
+.navInfo>p {
+    margin: 20px 0;
+}
+
+.rightContainer {
+    height: 130vh;
+    width: 80%;
+}
+
+.content {
+    height: 50vh;
+    width: 100%;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/28/c9/21/photo7jpg.jpg?w=900&h=500&s=1");
+    background-size: cover;
+}
+
+.content .para {
+    padding-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .para>.firstP {
+    background-color: #fefefe;
+    display: inline;
+    font-size: 25px;
+}
+
+.content .para>.secondP {
+    display: inline;
+    color: white;
+    background-color: #111214;
+    font-size: 25px;
+}
+
+.nav {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    border: 1px solid;
+    font-size: 20px;
+    background-color: #faebd6;
+}
+
+.textAndInput {
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textAndInput .textAndIcon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textAndIcon i {
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.textAndInput .inputAndButton input {
+    height: 37px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.inputAndButton>button {
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+}
+
+.cards {
+    /* height: auto;
+    width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    height: 440px;
+    width: 230px;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.item>img {
+    height: 15vh;
+    width: 100%;
+}
+
+.item .info {
+    padding: 10px;
+    text-align: center;
+}
+
+.item .info>h3 {
+    font-size: 20px;
+}
+
+.item .info>p {
+    padding: 10px 0;
+}
+
+.item .info>button {
+    height: 25px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .container {
+        width: 750px;
+        padding: 10px;
+        flex-direction: column;
+        margin: 0;
+       
+    }
+
+    .sideBar {
+        height: 10vh;
+        width: 720px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* .sideBar .logo {
+   
+    } */
+
+    .sideBar .navBar {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navBar li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navInfo {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .rightContainer {
+        margin-top: 5px;
+        width: 750px;
+    }
+
+    .rightContainer .content .para {
+        position: relative;
+        top: 150px;
+    }
+
+    .rightContainer .nav {
+        height: auto;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .textAndInput {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textAndIcon>i {
+        font-size: 20px;
+    }
+
+    .textAndIcon>p {
+        font-size: 10px;
+    }
+
+    .cards {
+        height: auto;
+        width: 100%;
+    }
+
+    .cards .item {
+        height: 30vh;
+        width: 160px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        height: 500vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+    .sideBar {
+        height: 50vh;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 10px;
+    }
+
+    .sideBar .navBar{
+        height: auto;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .sideBar .logo > img{
+        height: 32vh;
+        width: 250px;
+    }
+
+    .rightContainer{
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .rightContainer .content{
+        height: 50vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .rightContainer .content .img{
+        height: 20vh;
+    }
+
+    .rightContainer .content .para{
+        padding: 0;
+        height: 10vh;
+        width: 100%;
+    }
+
+    .rightContainer .content .para .firstP{
+        position: relative;
+        top: 170px;
+        width: 100%;
+        display: block;
+    }
+
+    .secondP {
+        position: relative;
+        top: 171px;
+        font-size: 25px;
+        display: block;
+    }
+
+    .rightContainer .nav{
+        height: 80px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .nav li{
+        padding-top: 20px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .textAndInput{
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .textAndIcon{
+        padding: 0 5px;
+    }
+
+    .textAndInput .textAndIcon > i{
+        font-size: 50px;
+    }
+
+    .textAndIcon > p{
+        font-size: 25px;
+    }
+
+    .inputAndButton{
+        padding: 0 5px;
+    }
+
+    .inputAndButton > input{
+        height: 50px;
+        width:250px;
+        background-color: redl;
+    }
+
+    .inputAndButton > button{
+        height: 42px;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards .item{
+        height: 120vh;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .item > img{
+        height: 380px;
+    }
+
+    .item .info{
+        height: 150px;
+        width: 100%;
+    }
+
+    .item .info h3{
+        font-size: 40px;
+    }
+
+    .info p{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .info button{
+        height: 50px;
+        width: 30%;
+        font-size: 40px;
+    }
+
+}
